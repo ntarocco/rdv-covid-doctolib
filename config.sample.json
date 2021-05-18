@@ -1,0 +1,16 @@
+{
+  "centres": [
+    {
+      "URL": "https://www.doctolib.fr/vaccination-covid-19/lyon?ref_visit_motive_ids[]=6970&ref_visit_motive_ids[]=7005&force_max_limit=2",
+      "name": "Hospices Civils de Lyon (HCL) - Vaccination COVID-19",
+      "addressFirstLine": "136 Rue Commandant Charcot"
+    }
+  ],
+  "nodemailer": {
+    "enabled": false,
+    "user": "",
+    "password": "",
+    "from": "",
+    "to": ""
+  }
+}

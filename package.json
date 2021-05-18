@@ -1,0 +1,25 @@
+{
+  "name": "rdv-covid-doctolib",
+  "version": "1.0.0",
+  "description": "Find an available slot for vaccination on Doctolib.fr and get an e-mail notification.",
+  "main": "app.js",
+  "dependencies": {
+    "nodemailer": "^6.4.17",
+    "playwright": "^1.11.0",
+    "playwright-chromium": "^1.11.0"
+  },
+  "scripts": {
+    "debug": "PWDEBUG=1 node app.js",
+    "test-email": "node test_email.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntarocco/rdv-covid-doctolib.git"
+  },
+  "author": "Nicola Tarocco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntarocco/rdv-covid-doctolib/issues"
+  },
+  "homepage": "https://github.com/ntarocco/rdv-covid-doctolib#readme"
+}
