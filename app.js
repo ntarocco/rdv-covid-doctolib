@@ -62,9 +62,10 @@ checkRDV = async (centreName, element) => {
   let slotsTitles = [];
   if (!noRDV) {
     const slotsElements = await element.$$(".availabilities-slot");
-    slotsTitles = slotsElements.map(
-      async (el) => await el.getAttribute("title")
-    );
+    for (slotsElement of slotsElements) {
+      const title = await slotsElement.getAttribute("title");
+      slotsTitles.push(title);
+    }
     console.log(`Available slots at ${centreName}!`, slotsTitles.join(", "));
   } else {
     console.log(`No available slots at ${centreName}`);
